@@ -1,7 +1,8 @@
 import openai
-import os
+import streamlit as st
 
-client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Use the API key from Streamlit secrets
+client = openai.OpenAI(api_key=st.secrets["openai"]["api_key"])
 
 def answer_query(question, chunks):
     context = "\n\n".join([chunk["text"] for chunk in chunks])
