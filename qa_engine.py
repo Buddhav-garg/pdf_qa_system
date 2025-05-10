@@ -14,4 +14,3 @@ def answer_query(question, chunks):
         ]
     )
     return response.choices[0].message.content.strip()
-
