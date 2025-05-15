@@ -2,5 +2,5 @@ streamlit
 sentence-transformers
 faiss-cpu
 PyMuPDF
-openai>=1.2.0
 langchain
+llama-cpp-python
